@@ -23,3 +23,20 @@ This script scrapes TikTok profiles to extract video links, views, and profile i
 3. Run the script:
    ```bash
    python main.py
+
+### obtener_estadisticas.py
+
+This script reads a list of TikTok video links from an Excel file, extracts detailed metrics for each video, and combines this data with the original dataset. It then saves the enriched dataset into a new Excel file.
+
+#### Key Features:
+- Parses video publication dates and metrics (likes, comments, shares, saves).
+- Converts abbreviated metrics (K, M) into integers.
+- Handles errors gracefully and logs any issues encountered.
+- Merges extracted metrics with the original dataset and saves to a new Excel file.
+
+#### Usage:
+1. Ensure you have Python and the necessary libraries installed (Playwright, pandas).
+2. Update the `archivo_entrada` variable with the path to your input Excel file.
+3. Run the script:
+   ```bash
+   python obtener_estadisticas.py
